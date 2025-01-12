@@ -42,7 +42,7 @@ def main(directory, hugo_folder, git_folder):
 
     # Step 2: Run 'hugo build' command
     print("Running 'hugo build' command...")
-    run_command("hugo build")
+    run_command("npm run build")
 
     # Step 3: Rename 'public' folder to 'docs'
     if os.path.exists(public_path) and os.path.isdir(public_path):
